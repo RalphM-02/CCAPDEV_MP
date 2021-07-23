@@ -1,0 +1,42 @@
+.input{
+    padding: 10px;
+}
+
+label{
+    font-size: 20px;
+}
+
+input[type=text]{
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    height: 5%;
+    font-size: 110%;
+}
+
+input[type=password]{
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    height: 5%;
+    font-size: 110%;
+}
+
+.error{
+    font-size: 70%;
+}
+
+input[type=submit]{
+    float: right;
+    width: 20%;
+    height: 5%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-top: -1%;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+#register{
+    margin-top: 10%;
+}
