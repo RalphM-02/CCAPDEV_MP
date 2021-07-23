@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav{
+    height: 100%;
+    position: fixed;
+    width: 15%;
+    background-color: black;
+}
+
+.nav a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
