@@ -8,6 +8,14 @@ body{
     position: fixed;
     width: 15%;
     background-color: rgb(65, 65, 65);
+    background: linear-gradient(90deg, #43a1e4 0%, #6bf4a2 100%);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.homeContainer{
+    margin-left: 15%;
+    padding-left: 30px;
+    padding-top: 20px;
 }
 
 .nav a{
@@ -24,8 +32,45 @@ body{
 
 .card{
     background-color: cornflowerblue;
+    background: linear-gradient(90deg, #43a1e4 0%, #6bf4a2 100%);
     margin-left: 25%;
     width: 50%;
     padding: 30px;
     border-radius: 20px 20px 20px 20px;
+}
+
+input[type=submit]{
+    margin-left: 90%;
+    width: 20%;
+    height: 5%;
+    background-color: #43a1e4;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+
+#Snippet{
+    margin-top: 150%;
+}
+
+#Snippet h2{
+    padding-left: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#icon{
+    padding-left: 20px;
+    width: 40%;
+    height: 10%;
+}
+
+.post{
+    margin-top: 3%;
+    display: flex;
 }
