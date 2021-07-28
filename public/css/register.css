@@ -2,6 +2,20 @@ input{
     margin: auto;
     padding: 10px;
     width: 90%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+input:focus{
+    border: 1px solid black;
+}
+
+.label-div{
+    text-align: left;
+    width: 100%;
+    padding-left: 5%;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 .error{
@@ -21,5 +35,37 @@ input{
     background-color: white;
     padding: 10px;
     border-radius: 8px;
-    justify-content: center;
+    text-align: center;
+}
+
+.register-submit{
+    width: 90%;
+    margin-top: 2%;
+    background: linear-gradient(90deg, #43a1e4 0%, #6bf4a2 100%);
+    border: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 8px;
+}
+
+.register-submit:hover{
+    opacity: 50%;
+}
+
+.login-register{
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    background: linear-gradient(90deg, #43a1e4 0%, #6bf4a2 100%);
+    border: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 5px 0px 5px 0px;
+}
+
+.login-register:hover{
+    opacity: 50%;
 }

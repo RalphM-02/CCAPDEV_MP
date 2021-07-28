@@ -39,17 +39,18 @@ body{
     border-radius: 20px 20px 20px 20px;
 }
 
-input[type=submit]{
+#create-post input[type=submit]{
     margin-left: 90%;
+    height: 50px;
     width: 20%;
-    height: 5%;
     background-color: #43a1e4;
     border-radius: 10px 10px 10px 10px;
     padding: 10px;
     color: white;
+    border: none;
 }
 
-input[type=submit]:hover{
+#create-post input[type=submit]:hover{
     background-color: white;
     color: black;
 }
