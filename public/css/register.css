@@ -1,23 +1,7 @@
-.input{
+input{
+    margin: auto;
     padding: 10px;
-}
-
-label{
-    font-size: 20px;
-}
-
-input[type=text]{
-    border-radius: 10px 10px 10px 10px;
-    width: 50%;
-    height: 5%;
-    font-size: 110%;
-}
-
-input[type=password]{
-    border-radius: 10px 10px 10px 10px;
-    width: 50%;
-    height: 5%;
-    font-size: 110%;
+    width: 90%;
 }
 
 .error{
@@ -26,5 +10,16 @@ input[type=password]{
 
 
 #register{
+    margin: auto;
     margin-top: 10%;
+    width: 50%;
+}
+
+#form-card{
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: center;
 }
