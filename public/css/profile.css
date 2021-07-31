@@ -29,9 +29,13 @@
 
 .profile-bio{
     margin-top: 30px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    border: 5px solid #43a1e4;
+    background-color: rgb(199, 199, 199);
+}
+
+.profile-bio p{
+
 }
 
 .edit-profile{
@@ -39,7 +43,8 @@
 }
 
 .edit-profile a{
-    margin-left: 87%;
+    width: 100px;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     color: white;

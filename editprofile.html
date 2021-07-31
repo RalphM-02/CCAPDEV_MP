@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/editprofile.css">
+    
 </head>
 <body>
     <div class="nav">
@@ -19,7 +21,29 @@
         </div>
     </div>
     <div class="homeContainer">
-        
+        <div class="card">
+            <div id="edit-container">
+                <h1>Edit Profile</h1>
+                <form action="#">
+                    <div class="edit-info">
+                        <label for="updateUsername">Update Username</label><br>
+                        <input type="text" name="updateUsername" value="QuadrupleBiceps120">
+                        <p class="edit-error" id="updateUname-error"></p>
+                    </div>
+                    <div class="edit-info">
+                        <label for="updatePassword">Update Password</label><br>
+                        <input type="password" name="updatePassword" value="12345678">
+                        <p class="edit-error" id="updatePw-error"></p>
+                    </div>
+                    <div class="edit-info">
+                        <label for="updateUsername">Update Bio</label><br>
+                        <input type="text" name="updateBio" value="Di ako nagiisip eh basta alam ko goal ko, focus.">
+                        <p class="edit-error" id="updateBio-error"></p>
+                    </div>
+                    <input type="submit" id="edit-submit" value="Update">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

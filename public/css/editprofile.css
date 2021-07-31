@@ -1,0 +1,28 @@
+#edit-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.edit-info input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+    border: solid 1px grey;
+}
+
+.edit-info input:focus{
+    border: solid 1px grey;
+}
+
+#edit-submit{
+    background-color: #43a1e4;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 2px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
