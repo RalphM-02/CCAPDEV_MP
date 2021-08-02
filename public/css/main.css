@@ -131,8 +131,18 @@ input[type="button"]{
 }
 
 #create-comment-form input[type="submit"]{
-    width: 15%;
+    width: 12%;
     padding: 5px;
+    margin-left: 10px;
+    height: 50px;
+    border: none;
+    background-color: #43a1e4;
+    color: white;
+    border-radius: 10px;
+}
+
+#create-comment-form input[type="button"]{
+    width: 50px;
     margin-left: 10px;
     height: 50px;
     border: none;
@@ -145,7 +155,65 @@ input[type="button"]{
     opacity: 80%;
 }
 
+#create-comment-form input[type="button"]:hover{
+    opacity: 80%;
+}
+
 .create-comment{
     padding-top: 10px;
     flex-basis: 100%;
+}
+
+.comment-section{
+    width: 100%;
+    background-color: white;
+    height: auto;
+}
+
+.user-comment{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment-icon{
+    width: 50px;
+    height: 50px;
+    border: 10px solid #6bf4a2;
+}
+
+.comment-icon img{
+    width: inherit;
+    height: inherit;
+}
+
+.comment-content{
+    padding-left: 10px;
+}
+
+.commenter{
+    padding-left: 10px;
+}
+
+
+#search-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-input{
+    padding: 10px;
+    border: none;
+    width: 90%;
+}
+
+.search-submit{
+    width: 10%;
+    background-color: #43a1e4;
+    border: none;
+    color: white;
+}
+
+.search-submit:hover{
+    opacity: 80%;
 }
