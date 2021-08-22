@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RalphM-02/CCAPDEV_MP/issues"
   },
-  "homepage": "https://github.com/RalphM-02/CCAPDEV_MP#readme"
+  "homepage": "https://github.com/RalphM-02/CCAPDEV_MP#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
