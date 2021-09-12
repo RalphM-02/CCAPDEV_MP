@@ -11,7 +11,7 @@ var hbs = require('hbs');
 app.set('view engine', 'hbs');
 
 app.get('/', function(req, res){
-    res.render('index');
+    res.render('home');
 });
 
 var server = app.listen(3000, function(){
