@@ -18,6 +18,7 @@
   "homepage": "https://github.com/RalphM-02/CCAPDEV_MP#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.2"
+    "hbs": "^4.1.2",
+    "mongoose": "^6.0.5"
   }
 }
