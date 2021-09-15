@@ -1,5 +1,6 @@
 const express = require("express");
 const routes = require("./routes/routes.js");
+const db = require("./models/db.js");
 
 const app = new express();
 
@@ -13,6 +14,8 @@ app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.use('/', routes);
+
+db.connect();
 
 var server = app.listen(3000, function(){
     console.log('Node server running');
