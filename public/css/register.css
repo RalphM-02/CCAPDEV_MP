@@ -69,3 +69,24 @@ input:focus{
 .login-register:hover{
     opacity: 50%;
 }
+
+.select-image-container{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.select-image{
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    margin: 10px;
+}
+
+.select-image img{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}

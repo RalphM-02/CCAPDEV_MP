@@ -4,8 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="public/css/register.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
     <div class="card" id="register">
@@ -18,6 +18,11 @@
                 <input type="password" name="password" placeholder="Enter Password" required>
                 <div class="label-div"><label for="confirmpw">Confirm Password</label></div>
                 <input type="password" name="confirmpw" placeholder="Confirm Password" required>
+                <div class="label-div"><label for="image">Select Avatar</label></div>
+                <div class="select-image-container">
+                    <div class="select-image"><img src="/images/king.jpg" alt="king"><br><input type="radio" name="image" value="king.jpg"></div>
+                    <div class="select-image"><img src="/images/queen.png" alt="queen"><br><input type="radio" name="image" value="queen.png"></div>
+                </div>
                 <input type="submit" value="Register" class="register-submit">
             </form>
         </div>
