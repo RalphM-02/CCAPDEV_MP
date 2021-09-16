@@ -143,7 +143,7 @@ input[type="button"]{
 
 #create-comment-form input[type="button"]{
     width: 50px;
-    margin-left: 10px;
+    margin-left: 92%;
     height: 50px;
     border: none;
     background-color: #43a1e4;

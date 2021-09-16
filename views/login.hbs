@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="card" id="register">
+        <div id="form-card">
+            <h1 id="title">Login</h1>
+            <form action="/login" method="POST">
+                <div class="label-div"><label for="username">Username</label></div>
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <div class="label-div"><label for="password">Password</label></div>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <p>{{error}}</p>
+                <input type="submit" value="Log In" class="register-submit">
+                <a href="/register" style="text-decoration: none;"><div class="login-register">Register</div></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
