@@ -1,4 +1,6 @@
 const UserModel = require("../models/UserModel.js");
+const bcrypt =  require("bcrypt");
+const saltRounds = 10;
 
 const registerController = {
     getRegister: function(req, res){
@@ -6,8 +8,24 @@ const registerController = {
     },
 
     postRegister: function(req, res){
-        UserModel.create(req.body, () =>{
-            res.redirect("/register");
+    /*    UserModel.create(req.body, () =>{
+            res.redirect("/success");
+        });*/
+        var username = req.body.username;
+        var password = req.body.password;
+        var image = req.body.image;
+
+        bcrypt.hash(password, saltRounds, function(err, hash){
+            var user = {
+                username: username,
+                password: hash,
+                image: image
+            }
+
+            UserModel.create(user, ()=>{
+                req.session.username = user.username;
+                res.redirect("/");
+            });
         });
     },
 
