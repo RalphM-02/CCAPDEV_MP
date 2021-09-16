@@ -5,6 +5,7 @@ const profileController = {
         var username = req.params.username;
         var image;
         var owned;
+        var bio;
         UserModel.findOne({username: username}, function(err, user){
             if(err)throw(err)
             if(user.username = req.session.username){
@@ -14,7 +15,8 @@ const profileController = {
                 owned =  false;
             }
             image = user.image;
-            res.render("profile", {username: username, image: image, owned: owned});
+            bio = user.bio;
+            res.render("profile", {username: username, image: image, owned: owned, bio: bio});
         });
 
     }

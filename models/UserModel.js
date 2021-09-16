@@ -12,6 +12,9 @@ var UserSchema = new mongoose.Schema({
     image:{
         type: String,
         required: true
+    },
+    bio:{
+        type: String
     }
 });
 
