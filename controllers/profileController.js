@@ -64,7 +64,6 @@ const profileController = {
             res.redirect("/profile/" + req.session.username);
         });
     }
-    
 }
 
 module.exports = profileController;

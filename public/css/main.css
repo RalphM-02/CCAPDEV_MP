@@ -217,3 +217,7 @@ input[type="button"]{
 .search-submit:hover{
     opacity: 80%;
 }
+
+.error{
+    font-size: 10px;
+}

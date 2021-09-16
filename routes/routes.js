@@ -19,6 +19,7 @@ app.get("/editProfile", profileController.getUpdateProfile);
 app.post("/updateUsername", profileController.postUpdateUsername);
 app.post("/updatePassword", profileController.postUpdatePassword);
 app.post("/updateBio", profileController.postUpdateBio);
+app.get("/getCheckUsername", registerController.getCheckUsername);
 
 
 module.exports = app;

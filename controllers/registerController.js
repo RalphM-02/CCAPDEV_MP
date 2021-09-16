@@ -8,13 +8,10 @@ const registerController = {
     },
 
     postRegister: function(req, res){
-    /*    UserModel.create(req.body, () =>{
-            res.redirect("/success");
-        });*/
         var username = req.body.username;
         var password = req.body.password;
         var image = req.body.image;
-        var bio = ""
+        var bio = "";
 
         bcrypt.hash(password, saltRounds, function(err, hash){
             var user = {
@@ -34,6 +31,15 @@ const registerController = {
     getSuccess: function(req, res){
         var username = req.query.username;
         res.render("success", username);
+    },
+
+    getCheckUsername: function(req, res){
+        var username = req.query.username;
+
+        UserModel.findOne({username: username}, 'username', function(err, result){
+            if(err) throw(err)
+            res.send(result);
+        });
     }
 }
 
