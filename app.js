@@ -1,9 +1,9 @@
 const express = require("express");
 const routes = require("./routes/routes.js");
 const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
 const mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost/FLEXR-MP');
+const MongoStore = require("connect-mongo")(session);
+mongoose.connect('mongodb://localhost:27017/FLEXR-MP');
 
 const app = new express();
 
@@ -17,7 +17,7 @@ app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.use(session({
-    'secret': 'FLEXR-MP', //change to cloud db
+    'secret': 'FLEXR-MP',
     'resave': false,
     'saveUninitialized': false,
     store: new MongoStore({mongooseConnection: mongoose.connection})

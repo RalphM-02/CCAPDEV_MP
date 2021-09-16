@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/RalphM-02/CCAPDEV_MP#readme",
   "dependencies": {
-    "connect-mongo": "^4.5.0",
+    "connect-mongo": "^3.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "hbs": "^4.1.2",
