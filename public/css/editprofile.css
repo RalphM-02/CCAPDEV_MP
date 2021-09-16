@@ -15,7 +15,7 @@
     border: solid 1px grey;
 }
 
-#edit-submit{
+.edit-submit{
     background-color: #43a1e4;
     border: none;
     padding: 15px;
@@ -25,4 +25,8 @@
     font-weight: 2px;
     letter-spacing: 1px;
     border-radius: 8px;
+}
+
+.edit-submit:hover{
+    opacity: 80%;
 }

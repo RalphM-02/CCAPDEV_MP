@@ -14,12 +14,14 @@ const registerController = {
         var username = req.body.username;
         var password = req.body.password;
         var image = req.body.image;
+        var bio = ""
 
         bcrypt.hash(password, saltRounds, function(err, hash){
             var user = {
                 username: username,
                 password: hash,
-                image: image
+                image: image,
+                bio: bio
             }
 
             UserModel.create(user, ()=>{

@@ -22,9 +22,11 @@
                 <div class="profile-bio">
                     <p>{{bio}}</p>
                 </div>
-                <div class="edit-profile">
-                    <a href="/editProfile">Edit Profile</a>
-                </div>
+                {{#if owned}}
+                    <div class="edit-profile">
+                        <a href="/editProfile">Edit Profile</a>
+                    </div>
+                {{/if}}
             </div>
         </div>
     </div>
