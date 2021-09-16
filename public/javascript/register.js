@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
 
     $("#confirmpw").keyup(function(){
-        if($("#password").value() != $("#confirmpw").value()){
+        if($("#password").val() != $("#confirmpw").val()){
             $("#confirmpw-error").text("Passwords do not match");
             $("#register-submit").prop('disabled', true);
         }
