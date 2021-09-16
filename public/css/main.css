@@ -220,4 +220,9 @@ input[type="button"]{
 
 .error{
     font-size: 10px;
+    color: black;
+}
+
+.error-div{
+    padding: 5px;
 }

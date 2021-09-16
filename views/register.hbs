@@ -16,13 +16,13 @@
             <form action="/register" method="POST">
                 <div class="label-div"><label for="username">Username</label></div>
                 <input type="text" name="username" id="username" placeholder="Enter Username" required>
-                <p id="username-errror" class="error">error</p>
+                <div class="error-div"><p id="username-errror" class="error"> </p></div>
                 <div class="label-div"><label for="password">Password</label></div>
                 <input type="password" name="password" id="password" placeholder="Enter Password" required>
-                <p id="password-errror" class="error">error</p>
+                <div class="error-div"><p id="password-errror" class="error"></p></div>
                 <div class="label-div"><label for="confirmpw">Confirm Password</label></div>
                 <input type="password" name="confirmpw" id="confirmpw" placeholder="Confirm Password" required>
-                <p id="confirmpw-errror" class="error">error</p>
+                <div class="error-div"><p id="confirmpw-errror" class="error"></p></div>
                 <div class="label-div"><label for="image">Select Avatar</label></div>
                 <div class="select-image-container">
                     <div class="select-image"><img src="/images/king.jpg" alt="king"><br><input type="radio" name="image" value="king.jpg"></div>
