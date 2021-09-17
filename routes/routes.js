@@ -21,6 +21,7 @@ app.post("/updatePassword", profileController.postUpdatePassword);
 app.post("/updateBio", profileController.postUpdateBio);
 app.get("/getCheckUsername", registerController.getCheckUsername);
 app.get("/getCheckNewUsername", profileController.getCheckNewUsername);
+app.get("/getNewPost", homeController.getNewPost);
 
 
 module.exports = app;

@@ -4,11 +4,17 @@ var PostSchema = new mongoose.Schema({
     author:{
         type: String
     },
+    image:{
+        type: String
+    },
     content:{
         type: String
     },
-    upvotes:{
-        type: [String]
+    upvotes:[{
+        type: String
+    }],
+    upvoteCount:{
+        type: Number
     }
 });
 
