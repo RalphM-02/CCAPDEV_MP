@@ -9,7 +9,7 @@ const profileController = {
         var owned;
         var bio;
         UserModel.findOne({username: username}, function(err, user){
-            if(err)throw(err)
+            if(err) throw(err)
             if(user.username = req.session.username){
                 owned = true;
             }
