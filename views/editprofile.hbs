@@ -4,6 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/javascript/editprofile.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/editprofile.css">
     
@@ -16,23 +18,23 @@
                 <h1>Edit Profile</h1>
                 <form method="POST">
                     <div class="edit-info">
-                        <label for="updateUsername">Update Username</label><br>
-                        <input type="text" name="updateUsername" value="{{username}}">
+                        <label for="updateUsername">Update Username: {{username}}</label><br>
+                        <input type="text" name="updateUsername" id="updateUsername" value="">
                         <p class="edit-error" id="updateUname-error"></p>
                     </div>
                     <div class="edit-info">
                         <label for="updatePassword">Update Password</label><br>
-                        <input type="password" name="updatePassword" value="">
+                        <input type="password" name="updatePassword" id="updatePassword" value="">
                         <p class="edit-error" id="updatePw-error"></p>
                     </div>
                     <div class="edit-info">
                         <label for="updateUsername">Update Bio</label><br>
-                        <input type="text" name="updateBio" value="{{bio}}">
+                        <input type="text" name="updateBio" id="updateBio" value="{{bio}}">
                         <p class="edit-error" id="updateBio-error"></p>
                     </div>
-                    <input type="submit" class="edit-submit" value="Update Username" formaction="/updateUsername">
-                    <input type="submit" class="edit-submit" value="Update Password" formaction="/updatePassword">
-                    <input type="submit" class="edit-submit" value="Update Bio" formaction="/updateBio">
+                    <input type="submit" class="edit-submit" id="submit-new-username" value="Update Username" formaction="/updateUsername">
+                    <input type="submit" class="edit-submit" id="submit-new-password" value="Update Password" formaction="/updatePassword">
+                    <input type="submit" class="edit-submit" id="submit-new-bio" value="Update Bio" formaction="/updateBio">
                 </form>
             </div>
         </div>

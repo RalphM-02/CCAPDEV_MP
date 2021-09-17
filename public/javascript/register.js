@@ -15,13 +15,13 @@ $(document).ready(function(){
     });
 
     $('#password').keyup(function(){
-        if($('#password').length < 8){
-            $("#password-error").text('Password must be 8 or more characters long');
-            $("#register-submit").prop('disabled', true);
+        if($(this).val().length >= 8){
+            $("#password-error").text("Password is valid");
+            $("#register-submit").prop('disabled', false);
         }
         else{
-            $("#password=error").text("Password is valid");
-            $("#register-submit").prop('disabled', false);
+            $("#password-error").text('Password must be 8 or more characters long');
+            $("#register-submit").prop('disabled', true);
         }
     });
 

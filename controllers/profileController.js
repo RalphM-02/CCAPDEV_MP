@@ -63,6 +63,14 @@ const profileController = {
             if(err) throw(err)
             res.redirect("/profile/" + req.session.username);
         });
+    },
+    getCheckNewUsername: function(req, res){
+        var newUsername = req.query.updateUsername;
+        UserModel.findOne({username: newUsername}, 'username', function(err, result){
+            if(err) throw(err)
+            console.log(result);
+            res.send(result);
+        });
     }
 }
 
