@@ -226,3 +226,7 @@ input[type="button"]{
 .error-div{
     padding: 5px;
 }
+
+.author-profile{
+    text-decoration: none;
+}

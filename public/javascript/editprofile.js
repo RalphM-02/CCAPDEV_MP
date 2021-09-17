@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#updateUsername').keyup(function(){
         var username = $("#updateUsername").val();
-        $.get("/getCheckNewUsername", {username: username}, function(result){
+        $.get("/getCheckNewUsername?username=" + username, {username: username}, function(result){
             if(result.username == username){
                 $("#updateUname-error").text("This username is already taken");
                 $("#submit-new-username").prop('disabled', true);

@@ -65,7 +65,7 @@ const profileController = {
         });
     },
     getCheckNewUsername: function(req, res){
-        var newUsername = req.query.updateUsername;
+        var newUsername = req.query.username;
         UserModel.findOne({username: newUsername}, 'username', function(err, result){
             if(err) throw(err)
             console.log(result);
