@@ -6,4 +6,9 @@ $(document).ready(function(){
         });
         $("#content").val('');
     });
+    $(".upvote").click(function(){
+        var upvotes = $("#sheesh-count").val();
+        console.log(upvotes);
+        $("#sheesh-count").val(upvotes++);
+    });
 });

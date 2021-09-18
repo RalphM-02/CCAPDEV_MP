@@ -10,9 +10,6 @@ var PostSchema = new mongoose.Schema({
     content:{
         type: String
     },
-    upvotes:[{
-        type: String
-    }],
     upvoteCount:{
         type: Number
     }

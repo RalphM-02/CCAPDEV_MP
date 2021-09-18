@@ -32,13 +32,21 @@ const homeController = {
                 }
                 Post.create(post, function(err,result){
                     if(err) throw(err)
-                    console.log(result);
                     res.render("partials/post", post);
                 });
             });
         }
         else{
             res.render("error");
+        }
+    },
+    getSheesh: function(req, res){
+        var id = req.params.id;
+        if(req.session.username){
+            Post.updateOne({_id: id}, {$inc: {updateCount: 1}}, function(err, res){
+                if(err) throw(err)
+                console.log(res);
+            })
         }
     }
 }
