@@ -23,7 +23,7 @@ const profileController = {
                 Post.find({author: user.username}, function(err, posts){
                     if(err) throw(err)
                     console.log(owned);
-                    res.render("profile", {username: user.username, image: image, owned: owned, bio: bio, posts});
+                    res.render("profile", {sessionName: req.session.username ,username: user.username, image: image, owned: owned, bio: bio, posts});
                 }).sort({createdAt: -1});
             }
             else{
@@ -36,6 +36,7 @@ const profileController = {
             UserModel.findOne({username: req.session.username}, function(err, result){
                 if(err)throw(err)
                 var details = {
+                    sessionName: req.session.username,
                     username: result.username,
                     bio: result.bio
                 }

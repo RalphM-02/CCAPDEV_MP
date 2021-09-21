@@ -6,7 +6,7 @@ const homeController = {
         if(req.session.username){
             Post.find({}, function(err, posts){
                 if(err) throw(err)
-                res.render("home", {username: req.session.username, posts});
+                res.render("home", {sessionName: req.session.username, posts});
             });
         }
         else{
