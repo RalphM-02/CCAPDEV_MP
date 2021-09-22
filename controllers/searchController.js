@@ -14,7 +14,7 @@ const searchController = {
     postSearch: function(req, res){    
         if(req.session.username){
             var search = req.body.search;
-            post.find({content: {$regex: search}}, function(err, posts){
+            post.find({content: {$regex: search, $options: 'i'}}, function(err, posts){
                 if(err) throw(err)
                 res.render("result", {sessionName: req.session.username, posts});
             });

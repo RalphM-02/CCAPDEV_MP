@@ -51,10 +51,23 @@ const profileController = {
         var username = req.session.username;
         var updateUsername = req.body.updateUsername;
 
+        /*Post.updateMany({author: username}, {author: updateUsername}, function(err, posts){
+            if(err) throw(err)
+        });
+        UserModel.updateOne({username: username}, {username: updateUsername}, function(err, user){
+            if(err) throw(err)
+            console.log(user);
+            req.session.username = user.username;
+            res.redirect("/profile/" + req.session.username);
+        });*/
+
         UserModel.updateOne({username: username}, {username: updateUsername}, function(err, result){
             if(err) throw(err)
             req.session.username = updateUsername;
-            res.redirect("/profile/" + req.session.username);
+            Post.updateMany({author: username}, {author: updateUsername}, function(err, posts){
+                if(err) throw(err)
+                res.redirect("/profile/" + req.session.username);
+            });
         });
     },
     postUpdatePassword: function(req, res){
